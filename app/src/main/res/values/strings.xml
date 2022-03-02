@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Language Community</string>
+    <string name="retry">Retry</string>
+    <string name="community">Community</string>
+    <string name="something_went_wrong">Something went wrong.</string>
+    <string name="learns">Learns</string>
+    <string name="text_native">Native</string>
+</resources>
