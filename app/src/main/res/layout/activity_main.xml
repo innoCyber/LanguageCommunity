@@ -41,7 +41,7 @@
             tools:listitem="@layout/item_user"/>
 
         <ProgressBar
-            android:id="@+id/progressBar"
+            android:id="@+id/activity_main_progressbar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:visibility="@{usersUiState.progressBarVisibility}"

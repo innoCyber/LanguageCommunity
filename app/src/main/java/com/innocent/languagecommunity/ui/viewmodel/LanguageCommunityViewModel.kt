@@ -14,7 +14,9 @@ import javax.inject.Inject
 
 @HiltViewModel
 class LanguageCommunityViewModel @Inject constructor(communityInfoRepository: CommunityInfoRepository, private val  preferencesDataStore: PreferencesDataStore) : ViewModel() {
-    val userItemsUiStates = communityInfoRepository.getCommunityUsersInfo().map { pagingData ->
+
+    val communityUsersInfo = communityInfoRepository.getCommunityUsersInfo()
+    val userItemsUiStates = communityUsersInfo.map { pagingData ->
             pagingData.map { communityUserInfo -> UserItemUiState(communityUserInfo) }
         }.cachedIn(viewModelScope)
 
